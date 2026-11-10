@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wise Hours</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f3a34">
+<meta name="description" content="Learn to manage your time and energy wisely and rest in Jesus, based on Ephesians 5:15-20. Short lessons, case studies, and a weekly audit.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Real Life Christian Communities">
+<meta property="og:title" content="Wise Hours: Time and Energy, Resting in Jesus">
+<meta property="og:description" content="Short lessons, case studies, and a weekly audit based on Ephesians 5:15-20.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/wise-hours/">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/wise-hours/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Wise Hours, a Real Life Christian Communities app on time and energy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wise Hours: Time and Energy, Resting in Jesus">
+<meta name="twitter:description" content="Short lessons, case studies, and a weekly audit based on Ephesians 5:15-20.">
+<meta name="twitter:image" content="https://YOUR-USERNAME.github.io/wise-hours/og-image.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<style>
+:root{--bg:#f6f3ec;--card:#fffdf8;--ink:#1d2a27;--mute:#5d6b66;--line:#ddd6c6;--brand:#1f3a34;--gold:#b8862b;--ok:#2f6b4f;--no:#9a4a2e;--okbg:#e4f0e8;--nobg:#f6e5dd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141b19;--card:#1c2623;--ink:#ece8dd;--mute:#a3afa9;--line:#34423d;--brand:#0f1f1b;--gold:#e0b25a;--ok:#7cc9a0;--no:#e69a7c;--okbg:#1f3a2e;--nobg:#3d2a22}}
+:root[data-theme="dark"]{--bg:#141b19;--card:#1c2623;--ink:#ece8dd;--mute:#a3afa9;--line:#34423d;--brand:#0f1f1b;--gold:#e0b25a;--ok:#7cc9a0;--no:#e69a7c;--okbg:#1f3a2e;--nobg:#3d2a22}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+header{background:var(--brand);color:#f3ecd8;padding:18px 20px 16px}
+.hd{display:flex;flex-direction:column;align-items:flex-start;gap:10px}.hd img{height:auto;width:min(260px,70%)}
+header h1{margin:0;font-size:24px;font-weight:600;letter-spacing:.2px}
+header p{margin:2px 0 0;font:14px system-ui,sans-serif;opacity:.85}
+main{max-width:640px;margin:0 auto;padding:18px 16px 96px}
+h2{font-size:21px;margin:18px 0 8px}
+.sans,button,nav,textarea{font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.mod{display:flex;gap:14px;align-items:center;width:100%;text-align:left;color:inherit;cursor:pointer}
+.mod .ic{font-size:28px;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:var(--bg)}
+.mod b{display:block;font-size:18px}.mod small{color:var(--mute);font:13px system-ui,sans-serif}
+.bar{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin:10px 0}.bar i{display:block;height:100%;background:var(--gold)}
+.verse{border-left:3px solid var(--gold);padding:2px 0 2px 12px;color:var(--mute);font-style:italic;margin:12px 0}
+button{font-size:16px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:12px 16px;border-radius:10px;cursor:pointer}
+button.p{background:var(--brand);color:#f3ecd8;border-color:var(--brand)}
+:root[data-theme="dark"] button.p{border-color:var(--gold)}
+button:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;line-height:1.4}
+.opt.ok{background:var(--okbg);border-color:var(--ok)}.opt.no{background:var(--nobg);border-color:var(--no)}
+.fb{padding:12px;border-radius:10px;margin:10px 0;font-size:16px;background:var(--bg)}
+.row{display:flex;gap:10px;justify-content:space-between;margin-top:16px}
+textarea{width:100%;min-height:96px;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-size:16px}
+.tag{font:13px system-ui,sans-serif;color:var(--gold);font-weight:600}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav button{flex:1;border:0;border-radius:0;background:none;padding:14px 4px;font-size:14px;color:var(--mute)}nav button.on{color:var(--ink);font-weight:700;box-shadow:inset 0 3px 0 var(--gold)}
+.back{background:none;border:0;padding:4px 0;color:var(--mute);font-size:15px}
+.je{border-bottom:1px solid var(--line);padding:10px 0}.je:last-child{border:0}.je small{color:var(--mute)}
+</style>
+</head>
+<body>
+<header><div class="hd"><img src="logo.png" alt="RLCC logo" onerror="this.remove()"><div><h1>Wise Hours</h1><p>Time and energy, resting in Jesus · Ephesians 5:15–20</p></div></div></header>
+<main id="app"></main>
+<nav id="nav"></nav>
+<script>
+var L=function(t,x,v){return{k:'l',t:t,x:x,v:v}},Q=function(q,o,c,w){return{k:'q',q:q,o:o,c:c,w:w}},A=function(x,j){return{k:'a',x:x,j:j}};
+var MODS=[
+{t:"Look carefully",ic:"👀",v:"Ephesians 5:15",cards:[
+L("Notice before you fix","“Look carefully then how you walk.” Wise living starts with noticing. Many of us feel busy but have never really looked at where our hours and our energy go. Even Jesus withdrew to lonely places to pray (Luke 5:16); he knew his limits and honored them.","Luke 5:16"),
+Q("What comes first in wise time management?",["A better planner app","Honestly looking at how you spend time and energy","Working longer hours"],1,"Paul says “look carefully” before “make the best use.” Awareness comes before optimizing."),
+A("Tonight, jot down 3 things that drained you today and 3 that gave you life. No judging, just seeing. Then tell Jesus about both.","j1")]},
+{t:"Wise, not unwise",ic:"🧭",v:"Ephesians 5:15",cards:[
+L("Your roles, His priorities","Wisdom is skill for real life. You hold many roles: spouse, parent, worker, leader, friend. Trouble starts when every role shouts equally loud. Wise people name their roles, ask what each needs this season, and accept that some good things must wait. “Seek first the kingdom” (Matthew 6:33) re-orders everything else.","Matthew 6:33"),
+Q("Your cell group, your boss, and your child all need you tonight. What is the wise first move?",["Say yes to whoever is loudest","Pause, pray, and ask what is truly most important and most urgent","Do a little of everything poorly"],1,"Loud is not the same as important. Wisdom pauses and weighs before it moves."),
+A("Write your top 4 roles. Beside each, write one thing that role needs from you this week. Circle the one you have been neglecting.","j2")]},
+{t:"Make the best use of time",ic:"⏳",v:"Ephesians 5:16",cards:[
+L("Big rocks first","“Making the best use of the time, because the days are evil.” Time cannot be stored, only stewarded. Put the big rocks in first: time with God, your family, your calling. Then the small tasks fit around them. Plan your week around what matters, not around what interrupts.","Psalm 90:12"),
+Q("Which schedule shows “big rocks first”?",["Fit prayer in whenever there is a gap","Block prayer, family time, and key ministry tasks first, then fill in the rest","Finish all small tasks, then see what is left"],1,"What is scheduled gets done; what is squeezed gets lost. Teach us to number our days (Psalm 90:12)."),
+A("Open your calendar. Block 3 big rocks for this week (e.g., 20 minutes with God each morning, one family meal, one key task). Protect them.","j3")]},
+{t:"Understand the Lord’s will",ic:"🕊️",v:"Ephesians 5:17",cards:[
+L("Not every need is your assignment","“Do not be foolish, but understand what the will of the Lord is.” God does not call you to meet every need; He called Jesus to finish the work given to Him (John 17:4), and Jesus left some people unhealed. Saying no to a good thing can be obedience to the best thing.","John 17:4"),
+Q("A trusted friend asks you to take on one more ministry task. You are already stretched. What helps you discern?",["Accept, so you do not disappoint anyone","Pray, check your capacity and calling, and consult someone wise before answering","Refuse everything so you never get tired"],1,"Discernment listens to God, to wise counsel, and to your real limits."),
+A("Think of one commitment that drains you and is not clearly your assignment. Pray: “Lord, is this Yours for me?” Write what you sense, and who you will talk to.","j4")]},
+{t:"Be filled with the Spirit",ic:"🔥",v:"Ephesians 5:18",cards:[
+L("Where do you refill?","“Do not get drunk with wine… but be filled with the Spirit.” We often escape stress through numbing habits: endless scrolling, overeating, overwork. They promise rest but leave us emptier. The Spirit refills us through abiding in Christ (John 15:5), Sabbath, sleep, and honest prayer. Rest is trust in action.","John 15:5"),
+Q("You feel exhausted at midnight. Which choice leads to real renewal?",["Scroll for another hour to unwind","Pray briefly, hand over tomorrow’s worries, and sleep","Start tomorrow’s tasks now"],1,"“He gives to his beloved sleep” (Psalm 127:2). Sleep is a quiet confession that God is in charge."),
+A("Name your usual escape when stressed. Today, when the urge comes, pause for one minute and pray: “Jesus, fill me.” Notice what changes.","j5")]},
+{t:"Sing, give thanks, belong",ic:"🎶",v:"Ephesians 5:19-20",cards:[
+L("Rhythms of worship and gratitude","“Addressing one another in psalms and hymns… giving thanks always.” Gratitude and song reset a tired heart and turn our eyes from our demands to our Giver. Spirit-filled people do this together, in community, not alone. Healthy rhythms also repair strained relationships: bless, thank, and speak kindly.","Philippians 4:6-7"),
+Q("What does gratitude do for an anxious heart?",["It denies real problems","It shifts focus to God’s faithfulness and invites His peace","It is only for good days"],1,"Philippians 4:6-7 pairs prayer with thanksgiving, and the peace of God guards our hearts."),
+A("Pick one song of worship for your commute or chores this week. Text one person a specific thank-you today.","j6")]}
+];
+var CASES=[
+{t:"The Yes-Machine",w:"Grace leads a community group, works full-time, and has two young kids. When the church needs a volunteer, she says yes. Tonight she snaps at her daughter and cries in the kitchen. A friend asks her to help with another event.",o:[
+["Say yes. People are counting on her.","She keeps carrying more than she can hold, and her family pays for it. Love for others does not erase her limits.",0],
+["Pause, pray, and tell her friend she needs a day to answer; then talk with her husband and her leader.","Yes. Wisdom pauses, seeks counsel, and checks capacity (Eph 5:15, 17). Jesus said no to good things for the Father’s will.",1],
+["Quit everything at once to avoid more stress.","Overcorrecting is also reactive. Wisdom adjusts deliberately with others’ help, not in a panic.",0]]},
+{t:"Recital or meeting?",w:"Ramon, a ministry worker, has a leaders’ meeting Thursday night, the same time as his son’s school recital. He has already missed two events this month.",o:[
+["Attend the meeting; ministry is more spiritual.","Ministry is not more spiritual than family. A father’s presence is part of his calling (Eph 6:4).",0],
+["Tell his leader early about the conflict, ask to be excused or join later, and go to the recital.","Yes. Talking early, with humility, honors both roles. Big rocks first: his son is one of them.",1],
+["Skip both and rest at home.","Rest matters, but avoiding both fails two people who need him. Choose, communicate, and be present.",0]]},
+{t:"Running on empty",w:"Pastor Joel finishes Sunday exhausted. By Monday midnight he is scrolling videos to numb out, then wakes tired and irritable. He feels guilty about resting at all.",o:[
+["Push harder; the harvest is plentiful.","Jesus, who knew the harvest, still slept in a boat (Mark 4:38). Exhaustion is not a spiritual badge.",0],
+["Set a Sabbath day, a phone cutoff at night, and ask a friend to check in weekly.","Yes. Being filled with the Spirit includes rest, sleep, and accountability. Rest says: God holds the church, not me.",1],
+["Take a long vacation and change nothing else.","Rest helps, but without new rhythms, the same patterns return. Build weekly habits.",0]]},
+{t:"The crowded Monday",w:"Mia is a student and a youth leader. This Monday she has an exam, a youth planning meeting, a sick grandmother who needs a visit, and a friend who needs to talk.",o:[
+["Handle whatever arrives first.","Reacting to arrival order ignores importance. Wisdom ranks.",0],
+["List all four, rank by importance and urgency, ask for help or postponement on the rest, and pray before starting.","Yes. The exam and grandmother are time-bound; the meeting and friend can often be moved with a kind word. Prayer anchors her.",1],
+["Do all four, sleeping less.","Short on sleep, she will do all four badly. Wisdom accepts that she is not unlimited.",0]]},
+{t:"Marriage on the margins",w:"Daniel and Ana both lead in church. Lately they only talk about schedules and logistics. Both are tired, and each assumes the other understands.",o:[["Wait until ministry slows down, then reconnect.","Ministry seasons rarely slow on their own. Waiting lets distance grow quietly.",0],["Set a weekly unhurried time together, phones away, to listen, thank, and pray.","Yes. Husband and wife are among the first big rocks (Eph 5:19-21). Gratitude and listening repair what logistics cannot.",1],["Give each other more space to recover alone.","Rest alone has a place, but without shared time they drift further apart.",0]]},
+{t:"The boss who never stops",w:"Carlo receives work messages from his manager at 10 p.m. and on Sundays. He answers every one, fears losing his job, and is short with his family.",o:[["Keep answering; the job provides for the family.","Provision matters, but constant availability costs his family and his rest, and quietly says that he, not God, is the provider.",0],["Pray, then calmly ask his manager to agree on after-hours expectations, offering to be reachable for true emergencies.","Yes. A respectful, clear boundary is wisdom (Eph 5:15), and it flows from trusting God as provider (Matt 6:31-33).",1],["Stop replying and say nothing.","Silence breeds misunderstanding. Honest conversation is kinder and wiser.",0]]},
+{t:"Tension at home",w:"Liza, a tired mother, comes home from work and immediately corrects her teenager about his phone and chores. Every evening ends in an argument.",o:[["Correct more firmly until he listens.","Escalating pressure on an exhausted evening rarely helps. Fathers, do not provoke your children (Eph 6:4).",0],["Rest briefly first, then spend ten unhurried minutes listening to him before raising any concern.","Yes. Connection before correction. Pausing to be refilled makes her gentler and wiser.",1],["Avoid conflict by saying nothing.","Avoiding the issue leaves the tension in place. Gentle, timely conversation is better.",0]]},
+{t:"The faithful volunteer",w:"You lead a ministry. Marco says yes to every request and never complains, but he looks worn out and his smile has faded.",o:[["Keep giving him tasks; he is reliable.","Reliability is not limitless. Overusing a faithful person is not shepherding.",0],["Check in privately, ask how he is doing, lighten his load, and share the work with others.","Yes. Shepherds look carefully at those they lead (Eph 5:15; 1 Pet 5:2). Protecting people is part of leading well.",1],["Wait for him to ask for help.","Tired people who always say yes rarely ask. Leaders must notice and reach out.",0]]}
+];
+var S={d:{},j:{},c:{}},tab='learn',cur=null,ci=0,cs=null;
+try{S=JSON.parse(localStorage.getItem('wh')||'')||S}catch(e){}
+function save(){try{localStorage.setItem('wh',JSON.stringify(S))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+var app=document.getElementById('app'),nav=document.getElementById('nav');
+function renderNav(){nav.innerHTML=[['learn','📖 Learn'],['cases','🧩 Cases'],['audit','⚖️ Audit'],['journal','✍️ Journal']].map(function(a){return'<button class="'+(tab==a[0]?'on':'')+'" onclick="go(\''+a[0]+'\')">'+a[1]+'</button>'}).join('')}
+function go(t){tab=t;cur=null;cs=null;render();scrollTo(0,0)}
+function pct(){var n=0;MODS.forEach(function(m,i){if(S.d[i])n++});return Math.round(n/MODS.length*100)}
+function render(){renderNav();if(tab=='learn')cur===null?home():card();else if(tab=='cases')cs===null?cases():caseView();else if(tab=='audit')audit();else journal()}
+var DY=[["Psalm 90:12","Teach us to number our days. What is the one thing you will do first today, before the urgent things arrive?"],["Ephesians 5:15","Look carefully at how you walk. Where did your energy go yesterday, and what did it show you?"],["Matthew 11:28","Jesus offers rest to the weary. What burden can you hand to Him right now?"],["Luke 5:16","Jesus withdrew to pray. When will you step away for even ten minutes today?"],["Psalm 127:2","God gives His beloved sleep. What would help you end today in trust?"],["Ephesians 5:20","Give thanks always. Name three gifts from this past day."],["Matthew 6:33","Seek first His kingdom. Which of today’s tasks truly belongs first?"],["John 15:5","Abide in Him. How will you stay connected to Jesus between tasks today?"],["Philippians 4:6-7","Do not be anxious. What worry can you turn into a prayer this morning?"],["Ephesians 5:17","Understand the Lord’s will. What is one request you may need to pray about before answering?"]];
+function ld(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
+function wk(){var d=new Date();d.setDate(d.getDate()-((d.getDay()+6)%7));return ld(d)}
+function daily(){S.dy=S.dy||{};S.w=S.w||{};var d=new Date(),p=DY[(d.getDate()+d.getMonth()*31)%DY.length],done=S.dy[ld(d)],n=Object.keys(S.dy).length;
+return'<div class="card"><div class="tag">Today’s pause</div><p><b>'+p[0]+'</b><br>'+esc(p[1])+'</p>'+(done?'<div class="fb">✓ You paused today. Days paused so far: '+n+'</div>':'<button class="p" onclick="dyDone()">I paused and prayed</button>')+(S.w[wk()]?'':'<p class="sans"><small>Your weekly audit is waiting. </small><button class="back" onclick="go(\'audit\')"><u>Start it</u></button></p>')+'</div>'}
+function dyDone(){S.dy[ld(new Date())]=1;save();render()}
+var AR=["Time with God","Family and close relationships","Work or study","Church and ministry","Rest and self-care"],AL=["Time I gave","Energy it gave me","How much it matters this season"];
+function g(i){return document.getElementById(i).value}
+function insights(w){var m=[];AR.forEach(function(n,i){var a=w.a[i];if(a[2]>=4&&a[0]<=2)m.push('<b>'+n+'</b> matters most to you but got little time. Could one small block go here this week?');if(a[0]>=4&&a[2]<=2)m.push('<b>'+n+'</b> took a lot of time but matters less right now. What could you release or share?');if(a[0]>=3&&a[1]<=2)m.push('<b>'+n+'</b> is draining you. Consider a better rhythm, help, or rest.')});
+return'<div class="card"><div class="tag">Your insights</div>'+(m.length?m.map(function(x){return'<p>'+x+'</p>'}).join(''):'<p>Your week looks fairly aligned. Give thanks, and keep protecting what matters.</p>')+'<div class="verse">Come to me, all who labor and are heavy laden, and I will give you rest. Matthew 11:28</div></div>'}
+function audit(){S.w=S.w||{};var k=wk(),sv=S.w[k],w=sv||{a:AR.map(function(){return[3,3,3]}),k:'',ad:'',r:''},h='<h2>Weekly audit</h2><p>Look carefully at your week (Ephesians 5:15). Rate each area, then see where time, energy, and what matters are out of step. It takes about 5 minutes.</p><div class="tag">Week of '+k+'</div>'+(sv?insights(w):'');
+AR.forEach(function(n,i){h+='<div class="card"><b>'+n+'</b>';AL.forEach(function(l,j){h+='<div class="sans"><small>'+l+' (1 to 5): <span id="v'+i+j+'">'+w.a[i][j]+'</span></small><input type="range" min="1" max="5" value="'+w.a[i][j]+'" style="width:100%;accent-color:var(--gold)" id="r'+i+j+'" aria-label="'+l+', '+n+'" oninput="document.getElementById(\'v'+i+j+'\').textContent=this.value"></div>'});h+='</div>'});
+h+='<div class="card"><p>One thing to keep:</p><textarea id="ak">'+esc(w.k)+'</textarea><p>One thing to adjust:</p><textarea id="aa">'+esc(w.ad)+'</textarea><p>One thing to release to Jesus:</p><textarea id="ar">'+esc(w.r)+'</textarea></div><button class="p" onclick="saveAudit()">'+(sv?'Update my audit':'Save and see insights')+'</button>';
+var ks=Object.keys(S.w).sort().reverse().filter(function(x){return x!=k}).slice(0,4);if(ks.length){h+='<h2>Past weeks</h2><div class="card">'+ks.map(function(x){var e=S.w[x].a.reduce(function(s,a){return s+a[1]},0)/AR.length;return'<div class="je"><small>Week of '+x+'</small><div>Average energy: '+e.toFixed(1)+' of 5</div></div>'}).join('')+'</div>'}
+app.innerHTML=h}
+function saveAudit(){S.w[wk()]={a:AR.map(function(_,i){return[0,1,2].map(function(j){return+document.getElementById('r'+i+j).value})}),k:g('ak'),ad:g('aa'),r:g('ar')};save();audit();scrollTo(0,0)}
+function home(){var h=daily()+'<h2>Welcome</h2><p>“Look carefully then how you walk, not as unwise but as wise.” Each lesson takes about 3 minutes: learn, practice, and apply one small step. Take it slowly; you are learning to rest in Jesus, not to perform.</p><div class="bar"><i style="width:'+pct()+'%"></i></div><small class="sans">'+pct()+'% complete</small>';
+MODS.forEach(function(m,i){h+='<button class="card mod" onclick="open_('+i+')"><span class="ic">'+m.ic+'</span><span><b>'+esc(m.t)+'</b><small>'+esc(m.v)+(S.d[i]?' · Done ✓':' · 3 cards')+'</small></span></button>'});
+app.innerHTML=h}
+function open_(i){cur=i;ci=0;render();scrollTo(0,0)}
+function card(){var m=MODS[cur],c=m.cards[ci],h='<button class="back" onclick="cur=null;render()">‹ All lessons</button><div class="bar"><i style="width:'+((ci+1)/3*100)+'%"></i></div><div class="card"><div class="tag">'+esc(m.t)+' · '+(ci+1)+' of 3</div>';
+if(c.k=='l')h+='<h2>'+esc(c.t)+'</h2><p>'+esc(c.x)+'</p><div class="verse">'+esc(c.v)+'</div>';
+if(c.k=='q'){h+='<h2>Quick check</h2><p>'+esc(c.q)+'</p>';c.o.forEach(function(o,i){h+='<button class="opt" onclick="ans('+i+',this)">'+esc(o)+'</button>'});h+='<div id="fb"></div>'}
+if(c.k=='a'){h+='<h2>Try it today</h2><p>'+esc(c.x)+'</p><textarea id="ta" placeholder="Write your reflection here (saved on this device)">'+esc(S.j[c.j]||'')+'</textarea>'}
+h+='</div><div class="row">'+(ci>0?'<button onclick="ci--;render()">Back</button>':'<span></span>')+'<button class="p" onclick="nxt()">'+(ci<2?'Next':'Finish lesson')+'</button></div>';
+app.innerHTML=h}
+function ans(i,b){var c=MODS[cur].cards[ci],bs=document.querySelectorAll('.opt');bs.forEach(function(x,k){x.disabled=true;if(k==c.c)x.classList.add('ok');else if(k==i)x.classList.add('no')});document.getElementById('fb').innerHTML='<div class="fb">'+(i==c.c?'✓ ':'Not quite. ')+esc(c.w)+'</div>'}
+function nxt(){var c=MODS[cur].cards[ci],t=document.getElementById('ta');if(t&&t.value.trim()){S.j[c.j]=t.value;S.j[c.j+'t']=Date.now();save()}
+if(ci<2){ci++;render();scrollTo(0,0)}else{S.d[cur]=1;save();var n=cur+1;if(n<MODS.length)open_(n);else{cur=null;render();scrollTo(0,0)}}}
+function cases(){var h='<h2>Case studies</h2><p>Real-life scenarios to practice wisdom. Choose what you would do, then see how Ephesians 5:15-20 speaks into it.</p>';
+CASES.forEach(function(c,i){h+='<button class="card mod" onclick="cs='+i+';render()"><span class="ic">🧩</span><span><b>'+esc(c.t)+'</b><small>'+(S.c[i]?'Practiced ✓':'Scenario '+(i+1))+'</small></span></button>'});app.innerHTML=h}
+function caseView(){var c=CASES[cs],h='<button class="back" onclick="cs=null;render()">‹ All cases</button><div class="card"><h2>'+esc(c.t)+'</h2><p>'+esc(c.w)+'</p><p><b>What would be the wise response?</b></p>';
+c.o.forEach(function(o,i){h+='<button class="opt" onclick="pick('+i+')">'+esc(o[0])+'</button>'});h+='<div id="fb"></div></div>';app.innerHTML=h}
+function pick(i){var c=CASES[cs],o=c.o[i],bs=document.querySelectorAll('.opt');bs.forEach(function(x,k){x.disabled=true;x.classList.add(c.o[k][2]?'ok':(k==i?'no':'x'))});
+document.getElementById('fb').innerHTML='<div class="fb">'+(o[2]?'✓ Wise choice. ':'Think again. ')+esc(o[1])+'</div>'+(o[2]?'':'<div class="fb">A wiser path: '+esc(c.o.filter(function(z){return z[2]})[0][1])+'</div>')+'<p class="sans">Reflect: where do you face something like this?</p><button class="p" onclick="S.c['+cs+']=1;save();cs=null;render()">Done</button>'}
+function journal(){var ks=Object.keys(S.j).filter(function(k){return k.slice(-1)!='t'&&S.j[k]}),h='<h2>My journal</h2>';
+if(!ks.length)h+='<div class="card">Your reflections will appear here after you write in a lesson’s “Try it today” card.</div>';
+else{h+='<div class="card">';ks.forEach(function(k){h+='<div class="je"><small>Lesson '+k.slice(1)+'</small><div>'+esc(S.j[k])+'</div></div>'});h+='</div>'}
+h+='<div class="card sans"><b>Add to your home screen</b><br>On your phone, open the browser menu and choose “Add to Home Screen” to launch Wise Hours like an app. Your notes stay private on this device.</div><div class="verse">“Come to me, all who labor and are heavy laden, and I will give you rest.” Matthew 11:28</div>';app.innerHTML=h}
+if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+render();
+</script>
+</body>
+</html>
