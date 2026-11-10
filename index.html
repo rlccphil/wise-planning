@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Wise Hours</title>
+<title>Wise Planning</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1f3a34">
 <meta name="description" content="Learn to manage your time and energy wisely and rest in Jesus, based on Ephesians 5:15-20. Short lessons, case studies, and a weekly audit.">
@@ -11,15 +11,15 @@
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Real Life Christian Communities">
-<meta property="og:title" content="Wise Hours: Time and Energy, Resting in Jesus">
+<meta property="og:title" content="Wise Planning: Time and Energy, Resting in Jesus">
 <meta property="og:description" content="Short lessons, case studies, and a weekly audit based on Ephesians 5:15-20.">
 <meta property="og:url" content="https://rlccphil.github.io/wise-planning/">
 <meta property="og:image" content="https://rlccphil.github.io/wise-planning/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Wise Hours, a Real Life Christian Communities app on time and energy">
+<meta property="og:image:alt" content="Wise Planning, a Real Life Christian Communities app on time and energy">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wise Hours: Time and Energy, Resting in Jesus">
+<meta name="twitter:title" content="Wise Planning: Time and Energy, Resting in Jesus">
 <meta name="twitter:description" content="Short lessons, case studies, and a weekly audit based on Ephesians 5:15-20.">
 <meta name="twitter:image" content="https://rlccphil.github.io/wise-planning/og-image.png">
 
@@ -61,7 +61,7 @@ nav button{flex:1;border:0;border-radius:0;background:none;padding:14px 4px;font
 </style>
 </head>
 <body>
-<header><div class="hd"><img src="logo.png" alt="RLCC logo" onerror="this.remove()"><div><h1>Wise Hours</h1><p>Time and energy, resting in Jesus · Ephesians 5:15–20</p></div></div></header>
+<header><div class="hd"><img src="logo.png" alt="RLCC logo" onerror="this.remove()"><div><h1>Wise Planning</h1><p>Time and energy, resting in Jesus · Ephesians 5:15–20</p></div></div></header>
 <main id="app"></main>
 <nav id="nav"></nav>
 <script>
@@ -161,7 +161,7 @@ document.getElementById('fb').innerHTML='<div class="fb">'+(o[2]?'✓ Wise choic
 function journal(){var ks=Object.keys(S.j).filter(function(k){return k.slice(-1)!='t'&&S.j[k]}),h='<h2>My journal</h2>';
 if(!ks.length)h+='<div class="card">Your reflections will appear here after you write in a lesson’s “Try it today” card.</div>';
 else{h+='<div class="card">';ks.forEach(function(k){h+='<div class="je"><small>Lesson '+k.slice(1)+'</small><div>'+esc(S.j[k])+'</div></div>'});h+='</div>'}
-h+='<div class="card sans"><b>Add to your home screen</b><br>On your phone, open the browser menu and choose “Add to Home Screen” to launch Wise Hours like an app. Your notes stay private on this device.</div><div class="verse">“Come to me, all who labor and are heavy laden, and I will give you rest.” Matthew 11:28</div>';app.innerHTML=h}
+h+='<div class="card sans"><b>Add to your home screen</b><br>On your phone, open the browser menu and choose “Add to Home Screen” to launch Wise Planning like an app. Your notes stay private on this device.</div><div class="verse">“Come to me, all who labor and are heavy laden, and I will give you rest.” Matthew 11:28</div>';app.innerHTML=h}
 if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
 render();
 </script>
